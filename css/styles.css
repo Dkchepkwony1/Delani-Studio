@@ -91,3 +91,9 @@
       text-align:center;
       
    }
+
+   .buttons {
+    border:none; 
+    outline:none;
+    background: none;
+   }

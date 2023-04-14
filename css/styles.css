@@ -1,0 +1,14 @@
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.container {
+  background-size: 600px 600px;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: auto 500px;
+}

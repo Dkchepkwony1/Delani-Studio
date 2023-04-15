@@ -42,7 +42,20 @@
   color: white;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  .services {
+#input1 {
+  font-size:30px;
+  color:black;
+  }
+#input2 {
+  font-size:30px;
+  color:black;
+ }
+#input3 {
+  font-size:30px;
+  color:black;
+  }
+
+.services {
     background-size: auto;
     height: 500px;
     width:1920px;
@@ -53,44 +66,57 @@
     margin-top: 50px;
     text-align:center;
     }
-    .text {
-      position: absolute;
-      bottom: 5px;
-      right: 20px;  
-      transform: translate(-50%, -50%);
-      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      /* font-size:x-large; */
-      font-weight: bolder;
-      text-align: center;
-      color: white;
+.text {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;  
+  transform: translate(-50%, -50%);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
      }
      
-     .container2 {
-        /* background-size: auto; */
-        height: 400px;
-        width:1920px;
-        position: relative; 
-        background-repeat: no-repeat;
-        /* padding:5vh 0; */
-        margin-left: 400px;
-        margin-top: 200px;  
-        text-align:center;
-     }
-     .container1 {
-      /* background-size: auto; */
-      height: 600px;
-      width:1920px;
-      position: relative;
-      background-repeat: no-repeat;
-      /* padding:5vh 0; */
-      margin-left: 400px;
-      margin-top: 50px;
-      text-align:center;
+.container2 {
+  height: 400px;
+  width:1920px;
+  position: relative; 
+  background-repeat: no-repeat;
+  margin-left: 400px;
+  margin-top: 200px;  
+  text-align:center;
+  }
+.container1 {
+  height: 600px;
+  width:1920px;
+  position: relative;
+  background-repeat: no-repeat;
+  margin-left: 400px;
+  margin-top: 50px;
+  text-align:center;
       
    }
 
-   .buttons {
+.buttons {
     border:none; 
     outline:none;
     background: none;
    }
+
+.buttons1 {
+border:none; 
+outline:none;
+background: none;
+   }
+
+.buttons2 {
+  border:none; 
+  outline:none;
+  background: none;
+  }
+
+.buttons3 {
+  border:none; 
+  outline:none;
+  background: none;
+  }

@@ -22,7 +22,25 @@
 
 
 $(document).ready(function(){
-  $(":button").click(function(){
-    alert("The paragraph was clicked.");
+  $(".buttons1").click(function(){
+    $(this).hide();
+    $("#input1").append("<p>Our desin practice offers a full range of services including brand strategy,interaction and visual deaign and user experience.Throughout your project,our designers create and implement visual design and workflows,solicit user feddback and work with you to make sure what gets built is waht is needed</p>");
+    });
+});
+$(document).ready(function(){
+  $(".buttons2").click(function(){
+    $(this).hide();
+    $("#input2").append("<p>All engineers are fluent in the latest enterprise, mobile and web development technologies.They collaborate with your team to write, and improve code on a daily basis,using proven practices such as test-driven development and pair programming.</p>");
+    $("#input1").hide();
+    $(".buttons1").show();
+  });
+});
+
+$(document).ready(function(){
+  $(".buttons3").click(function(){
+    $(this).hide();
+    $("#input3").append("<p>Planning and development is interactive. Because we are contantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.</p>");
+    $("#input2").hide();
+    $(".buttons2").show();  
   });
 });

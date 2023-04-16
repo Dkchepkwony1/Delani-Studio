@@ -1,26 +1,3 @@
-// $(document).ready(function() {
-//   $("#blanks form").submit(function(event) {
-//     var person1Input= $("input#person1").val();
-//     var person2Input= $("input#person2").val();
-//     var animalInput= $("input#animal").val();
-//     var exclamationInput= $("input#exclamation").val();
-//     var verbInput= $("input#verb").val();
-//     var nounInput= $("input#noun").val();
-//     var flavorInput= $("input:radio[name=flavor]:checked").val();
-//     console.log(flavorInput);
-//     $(".person1").text(person1Input);
-//     $(".person2").text(person2Input);
-//     $(".animal").text(animalInput);
-//     $(".exclamation").text(exclamationInput);
-//     $(".verb").text(verbInput);
-//     $(".noun").text(nounInput);
-//     $(".flavor").text(flavorInput);
-//     $("#story").show();
-//     event.preventDefault();
-//   });
-// });
-
-
 $(document).ready(function(){
   $(".buttons1").click(function(){
     $(this).hide();
@@ -41,6 +18,69 @@ $(document).ready(function(){
     $(this).hide();
     $("#input3").append("<p>Planning and development is interactive. Because we are contantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.</p>");
     $("#input2").hide();
-    $(".buttons2").show();  
+    $(".buttons2").show();
   });
 });
+
+// $(document).ready(function () {
+//   $(".idimg").hover(function () {
+//     $(".idimg").text('Delani Studio');
+//     $(this).animate({ opacity: 0.1});
+//   },
+//     function () {
+//       $( this ).find('p:last').remove();
+//     });
+// });
+  
+$(function () {
+  var info = $("#info");
+      if (info.length == 0) {
+        info = $("<span />").addClass("info");
+          $("src").append(info);
+    }
+   info.hide();
+  $(".idimg").bind("mouseenter", function () {
+      $(this).animate({ opacity: 0.17});
+      var p = GetScreenCordinates(this);
+      info.html(this.alt);
+      console.log(info);
+      info.show();
+      info.css("width", $(this).width());
+    info.css({ "left": p.x, "top": p.y + this.offsetHeight - info[0].offsetHeight });
+    info.innerHTML;
+  });
+  $(".idimg").bind("mouseleave", function () {
+    $(this).animate({ opacity: 6 });
+      info.hide();
+  });
+});
+function GetScreenCordinates(obj) {
+  var p = {};
+  p.x = obj.offsetLeft;
+  p.y = obj.offsetTop;
+  console.log(p.x);
+  console.log(p.y);
+  while (obj.offsetParent) {
+    p.x = p.x + obj.offsetParent.offsetLeft;
+    p.y = p.y + obj.offsetParent.offsetTop;
+    if (obj == document.getElementsByTagName("src")[0]) {
+          break;
+      }
+      else {
+          obj = obj.offsetParent;
+      }
+  }
+  return p;
+}
+
+// $(document).ready(function () {
+//   $("#img04").hover(function (e) {
+//       $(this).animate({ opacity: 0.15});
+//       $("#divIntro")
+//           .show()
+//           .text('At location - X: ' + e.pageX + ' Y:' + e.pageY)
+//           .css({ position: 'absolute', color: '#fff',
+//               left: e.pageX, top: e.pageY
+//       });
+//   });
+// });

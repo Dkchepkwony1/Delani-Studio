@@ -145,18 +145,19 @@
   }
 
 .info {
-  /* background-color:white; */
+ 
   filter: alpha(opacity=60);
-  opacity: 0.6;
+  opacity: 40;
   position: absolute;
   display: block;
   color:white;
   font-family: "Heebo",sans-serif;
   font-size: 60px;
   border-style: solid;
-  }
+ 
+   }
 
-.last {
+.last { 
   background-size: auto;
   height: 684x;
   width:1920px;

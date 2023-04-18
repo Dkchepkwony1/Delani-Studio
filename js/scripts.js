@@ -40,7 +40,7 @@ $(function () {
       console.log(info);
       info.show();
       info.css("width", $(this).width());
-    info.css({ "left": p.x, "top": p.y + this.offsetHeight - info[0].offsetHeight });
+      info.css({ "left": p.x, "top": p.y + this.offsetHeight - info[0].offsetHeight });
   });
   $(".idimg").bind("mouseleave", function () {
     $(this).animate({ opacity: 6 },6000);

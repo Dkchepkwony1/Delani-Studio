@@ -1,8 +1,10 @@
 $(document).ready(function(){
   $(".buttons1").click(function(){
     $(this).hide();
-    $("#input1").append("<p>Our desin practice offers a full range of services including brand strategy,interaction and visual deaign and user experience.Throughout your project,our designers create and implement visual design and workflows,solicit user feddback and work with you to make sure what gets built is what is needed</p>");
-    });
+    $("#input1").append("<p>Our design practice offers a full range of services including brand strategy,interaction and visual deaign and user experience.Throughout your project,our designers create and implement visual design and workflows,solicit user feedback and work with you to make sure what gets built is what is needed</p>");
+  });
+    //  $("#input1").hide();
+  // $(".buttons1").show();
 });
 $(document).ready(function(){
   $(".buttons2").click(function(){
@@ -23,16 +25,7 @@ $(document).ready(function(){
   });
 });
 
-// $(document).ready(function () {
-//   $(".idimg").hover(function () {
-//     $(".idimg").text('Delani Studio');
-//     $(this).animate({ opacity: 0.1});
-//   },
-//     function () {
-//       $( this ).find('p:last').remove();
-//     });
-// });
-  
+ 
 $(function () {
   var info = $("#info");
       if (info.length == 0) {
@@ -85,3 +78,18 @@ function GetScreenCordinates(obj) {
 //       });
 //   });
 // });
+
+
+document.getElementById("myBtn").addEventListener("click", function validateForm() {
+  let x = document.forms["myForm"]["userName"].value;
+  let y = document.forms["myForm"]["email"].value;
+  // let z = document.forms["myForm"]["comment"].value;
+  if (x == "" || y == "") { 
+    alert("Name and email must be filled out");
+  }
+  else {
+    // alert("Hello World");
+    alert(x+" we have received your message through "+y+". Thank you for reaching out to us.");
+
+  }
+});

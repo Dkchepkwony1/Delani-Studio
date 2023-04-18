@@ -30,18 +30,17 @@ $(function () {
   var info = $("#info");
       if (info.length == 0) {
         info = $("<span />").addClass("info");
-          $("src").append(info);
+          $("body").append(info);
     }
    info.hide();
   $(".idimg").bind("mouseenter", function () {
-      $(this).animate({ opacity: 0.17});
+      $(this).animate({ opacity: 0.5});
       var p = GetScreenCordinates(this);
       info.html(this.alt);
       console.log(info);
       info.show();
       info.css("width", $(this).width());
     info.css({ "left": p.x, "top": p.y + this.offsetHeight - info[0].offsetHeight });
-    info.innerHTML;
   });
   $(".idimg").bind("mouseleave", function () {
     $(this).animate({ opacity: 6 });
@@ -52,12 +51,10 @@ function GetScreenCordinates(obj) {
   var p = {};
   p.x = obj.offsetLeft;
   p.y = obj.offsetTop;
-  console.log(p.x);
-  console.log(p.y);
-  while (obj.offsetParent) {
+   while (obj.offsetParent) {
     p.x = p.x + obj.offsetParent.offsetLeft;
     p.y = p.y + obj.offsetParent.offsetTop;
-    if (obj == document.getElementsByTagName("src")[0]) {
+    if (obj == document.getElementsByTagName("body")[0]) {
           break;
       }
       else {
@@ -66,19 +63,6 @@ function GetScreenCordinates(obj) {
   }
   return p;
 }
-
-// $(document).ready(function () {
-//   $("#img04").hover(function (e) {
-//       $(this).animate({ opacity: 0.15});
-//       $("#divIntro")
-//           .show()
-//           .text('At location - X: ' + e.pageX + ' Y:' + e.pageY)
-//           .css({ position: 'absolute', color: '#fff',
-//               left: e.pageX, top: e.pageY
-//       });
-//   });
-// });
-
 
 document.getElementById("myBtn").addEventListener("click", function validateForm() {
   let x = document.forms["myForm"]["userName"].value;

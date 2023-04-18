@@ -8,7 +8,7 @@
   margin-left: 400px;
   margin-top: 50px;
   text-align:center;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:" Heebo",sans-serif;
   font-size:25px;
   }
 
@@ -29,7 +29,7 @@
   top:67%;
   right: 7%;
   transform: translate(-50%, -50%);
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:serif
   font-size:xx-large;
   font-weight: bolder;
   text-align: center;
@@ -37,16 +37,24 @@
   }
 
 .fonts {
-  font-size:90px;
+  font-size:60px;
   color: white;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Heebo",sans-serif;
   }
+
+/* .text-centre {
+    font-size:60px;
+    color: white;
+    font-family: "Heebo",sans-serif;
+    position: absolute;
+    } */
 
 #input1 {
   font-size:30px;
   color:black;
   font-weight:normal;
   text-align:center;
+  font-family: "Heebo",sans-serif;
   }
 
 #input2 {
@@ -54,6 +62,7 @@
   color:black;
   font-weight:normal;
   text-align:center;
+  font-family: "Heebo",sans-serif;
  }
 
 #input3 {
@@ -61,6 +70,7 @@
   color:black;
   font-weight:normal;
   text-align:center;
+  font-family: "Heebo",sans-serif;
   }
 
 .services {
@@ -71,7 +81,7 @@
   background-repeat: no-repeat;
   padding:5vh 0;
   margin-left: 400px;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align:center;
   }
 
@@ -80,7 +90,7 @@
   bottom: 5px;
   right: 20px;  
   transform: translate(-50%, -50%);
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Heebo",sans-serif;
   font-weight: bolder;
   text-align: center;
   color: white;
@@ -92,10 +102,12 @@
   position: relative; 
   background-repeat: no-repeat;
   margin-left: 400px;
-  margin-top: 150px;
-  /* margin-bottom:50px;   */
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-family: "Heebo",sans-serif;
   text-align:center;
-  }
+  font-weight: bolder;
+     }
 
 .container1 {
   height: 600px;
@@ -104,7 +116,8 @@
   background-repeat: no-repeat;
   margin-left: 400px;
   margin-top: 50px;
-  text-align:center; 
+  text-align:center;
+  font-weight: bolder;
    }
 
 .buttons {
@@ -132,14 +145,15 @@
   }
 
 .info {
-  background-color:white transparent;
-  /* filter: alpha(opacity=60);
-  opacity: 0.6; */
+  /* background-color:white; */
+  filter: alpha(opacity=60);
+  opacity: 0.6;
   position: absolute;
   display: block;
-  color: black;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15px;
+  color:white;
+  font-family: "Heebo",sans-serif;
+  font-size: 60px;
+  border-style: solid;
   }
 
 .last {
@@ -160,7 +174,7 @@
   top:20%;
   right: 45%;
   transform: translate(-50%, -50%);
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Heebo",sans-serif;
   font-size:20px;
   text-align: center;
   color: white;
@@ -171,7 +185,7 @@
   top:45%;
   left: 45%;
   transform: translate(-50%, -50%);
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Heebo",sans-serif;
   font-size:xx-large;
   font-weight: bolder;
   text-align: left;
@@ -220,7 +234,7 @@
 .input4 {
   font-size:10px;
   color:black;
-  /* font-weight:bolder; */
+  font-weight:bolder;
   text-align:center;
 }
 

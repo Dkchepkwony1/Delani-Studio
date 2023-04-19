@@ -173,14 +173,16 @@
   margin-top: 100px;
   margin-bottom: 2px;
   text-align:center;
+
   }
 
 .text1 {
-  position: absolute;
-  top:23%;
-  right: 43%;
+  position:absolute;
+  top:25%;
+  right: 40%;
   transform: translate(-50%, -50%);
   font-family: "Heebo",sans-serif;
+  display: block;
   font-size:40px;
   font-weight:900;
   text-align: center;
@@ -189,10 +191,11 @@
 
 .form-inline {
   position: absolute;
-  top:47%;
+  top:55%;
   left: 45%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   font-family: "Heebo",sans-serif;
+  /* padding:3vh 0; */
   font-size:xx-large;
   font-weight: bolder;
   text-align: left;
@@ -202,7 +205,7 @@
 
  .form-control {
   display: block;
-  width: 100%;
+  position: absolute;
   padding: 0.375rem 0.75rem;
   font-size: 1.5rem;
   font-weight: 400;
@@ -248,22 +251,21 @@
   text-align:center;
 }
 
-#txtDiv {
+/* #txtDiv {
   color: white;
   background: transparent;
-  /* border: none; */
   outline: none;
-  /* padding:1vh 0; */
   margin-left:40px;
   border: 1px solid whitesmoke;
-}
+} */
 
 
 .wrapper {
   position:relative;
-  width:900px;
-  height:300px;
+  width:1100px;
+  height:250px;
   border: 1px solid whitesmoke;
+  margin-left:50px;
  }
 
 .wrapper textarea {

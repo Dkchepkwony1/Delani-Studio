@@ -67,13 +67,14 @@ function GetScreenCordinates(obj) {
 document.getElementById("myBtn").addEventListener("click", function validateForm() {
   let x = document.forms["myForm"]["userName"].value;
   let y = document.forms["myForm"]["email"].value;
-  // let z = document.forms["myForm"]["comment"].value;
+  // let z = document.txtDiv["txtDiv"].value;
+  // console.log(z);
   if (x == "" || y == "") { 
     alert("Name and email must be filled out");
   }
   else {
-    // alert("Hello World");
+   
     alert(x+" we have received your message through "+y+". Thank you for reaching out to us.");
-
-  }
+    }
+    
 });

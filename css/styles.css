@@ -79,7 +79,7 @@
   width:1920px;
   position: relative;
   background-repeat: no-repeat;
-  padding:3vh 0;
+  padding:2vh 0;
   margin-left: 400px;
   margin-top: 20px;
   text-align:center;
@@ -87,12 +87,14 @@
 
 .text {
   position: absolute;
-  bottom: 6px;
-  right: 20px;  
-  transform: translate(-50%, -50%);
+  height: 500px;
+  width:1500px;
+  margin-left: 800px;
+  border-top: 5px;
+  padding:0.1vh 0;
+  transform: translate(-50%, -70%);
   font-family: "Heebo",sans-serif;
-  font-weight: bolder;
-  font-size:larger;
+  font-size:23px;
   text-align: center;
   color: white;
      }
@@ -175,18 +177,19 @@
 
 .text1 {
   position: absolute;
-  top:20%;
-  right: 45%;
+  top:23%;
+  right: 43%;
   transform: translate(-50%, -50%);
   font-family: "Heebo",sans-serif;
-  font-size:20px;
+  font-size:40px;
+  font-weight:900;
   text-align: center;
   color: white;
 }
 
 .form-inline {
   position: absolute;
-  top:45%;
+  top:47%;
   left: 45%;
   transform: translate(-50%, -50%);
   font-family: "Heebo",sans-serif;
@@ -245,12 +248,40 @@
   text-align:center;
 }
 
-textarea {
-  width: 100%;
+#txtDiv {
   color: white;
   background: transparent;
-  border: none;
+  /* border: none; */
   outline: none;
-  margin-left:60px;
+  /* padding:1vh 0; */
+  margin-left:40px;
   border: 1px solid whitesmoke;
 }
+
+
+.wrapper {
+  position:relative;
+  width:900px;
+  height:300px;
+  border: 1px solid whitesmoke;
+ }
+
+.wrapper textarea {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:inline-block;
+  resize: none;
+  z-index:1;
+  background-color: transparent;
+  color: white;
+}
+/* 
+.wrapper input[name="test2"] {
+  position:absolute;
+  top:0;
+  left:50px;
+  z-index:2;
+} */

@@ -34,7 +34,7 @@ $(function () {
     }
    info.hide();
   $(".idimg").bind("mouseenter", function () {
-      $(this).animate({ opacity: 0.1});
+      $(this).animate({ opacity: 0.5});
       var p = GetScreenCordinates(this);
       info.html(this.alt);
       console.log(info);

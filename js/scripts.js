@@ -2,16 +2,16 @@ $(document).ready(function(){
   $(".buttons1").click(function(){
     $(this).hide();
     $("#input1").append("<p>Our design practice offers a full range of services including brand strategy,interaction and visual deaign and user experience.Throughout your project,our designers create and implement visual design and workflows,solicit user feedback and work with you to make sure what gets built is what is needed</p>");
+    $("#input4").css("font-weight", "bolder");
   });
-    //  $("#input1").hide();
-  // $(".buttons1").show();
+ 
 });
+
 $(document).ready(function(){
   $(".buttons2").click(function(){
     $(this).hide();
     $("#input2").append("<p>All engineers are fluent in the latest enterprise, mobile and web development technologies.They collaborate with your team to write, and improve code on a daily basis,using proven practices such as test-driven development and pair programming.</p>");
-    // $("#input1").hide();
-    // $(".buttons1").show();
+    $("#input5").css("font-weight", "bolder");
   });
 });
 
@@ -19,11 +19,10 @@ $(document).ready(function(){
   $(".buttons3").click(function(){
     $(this).hide();
     $("#input3").append("<p>Planning and development is interactive. Because we are contantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.</p>");
-    // $("#input2").hide();
-    // $(".buttons2").show();
-
+    $("#input6").css("font-weight", "bolder");
   });
 });
+
 $(document).ready(function() {
   $("#input2").click(function() {
     $("#input2").hide();
@@ -45,6 +44,7 @@ $(document).ready(function() {
   });
 });
  
+// Hover functionality fuction
 $(function () {
   var info = $("#info");
       if (info.length == 0) {
@@ -82,7 +82,7 @@ function GetScreenCordinates(obj) {
   }
   return p;
 }
-
+// User input function and popup
 document.getElementById("myBtn").addEventListener("click", function validateForm() {
   let x = document.forms["myForm"]["userName"].value;
   let y = document.forms["myForm"]["email"].value;

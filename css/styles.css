@@ -1,7 +1,7 @@
 .about {
   background-size: auto;
   height: auto;
-  width:50%;
+  width:1920px;
   top:60%;
   left: 0%;
   position: relative; 
@@ -21,7 +21,6 @@
   position: relative;
   background-repeat: no-repeat;
   padding:5vh 0;
-  /* margin:50px; */
   margin-left: 400px;
   text-align:center;
   }
@@ -88,22 +87,22 @@ color: white;
   background-repeat: no-repeat;
   padding:2vh 0;
   margin-left: 400px;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align:center;
   }
 
 .text {
   position: absolute;
   height: auto;
-  width:60%;
-  top:60%;
-  left: 1%;
-  margin-left: 800px;
-  border-top: 5px;
-  padding:0.1vh 0;
+  width:100%;
+  top:75%;
+  left: 3%;
+  margin-left: 900px;
+  margin-top: 10px;
+  padding:0.2vh 0;
   transform: translate(-50%, -70%);
   font-family: "Heebo",sans-serif;
-  font-size:23px;
+  font-size:30px;
   text-align: center;
   color: white;
      }
@@ -180,7 +179,6 @@ color: white;
   margin-top: 100px;
   margin-bottom: 2px;
   text-align:center;
-
   }
 
 .text1 {
@@ -279,7 +277,7 @@ color: white;
   color: white;
 }
 @media screen and (max-width: 800px) {
-  .container2, .about, .text, .last {
+  .container2, .about, .last {
     width: 100%;
 }
 }

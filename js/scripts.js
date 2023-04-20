@@ -87,13 +87,11 @@ document.getElementById("myBtn").addEventListener("click", function validateForm
   let x = document.forms["myForm"]["userName"].value;
   let y = document.forms["myForm"]["email"].value;
   let z = document.forms["myForm"]["msg"].value;
-  // console.log(z);
   if (x == "" || y == "" || z== "") { 
     alert("Name, email and message must be filled out");
   }
   else {
    
     alert(x+" we have received your message '"+z+"' through "+y+". Thank you for reaching out to us.");
-    }
-    
+    }  
 });

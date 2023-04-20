@@ -24,7 +24,26 @@ $(document).ready(function(){
 
   });
 });
+$(document).ready(function() {
+  $("#input2").click(function() {
+    $("#input2").hide();
+    $(".buttons2").show();
+  });
+});
 
+$(document).ready(function() {
+  $("#input1").click(function() {
+    $("#input1").hide();
+    $(".buttons1").show();
+  });
+});
+
+$(document).ready(function() {
+  $("#input3").click(function() {
+    $("#input3").hide();
+    $(".buttons3").show();
+  });
+});
  
 $(function () {
   var info = $("#info");
@@ -67,14 +86,14 @@ function GetScreenCordinates(obj) {
 document.getElementById("myBtn").addEventListener("click", function validateForm() {
   let x = document.forms["myForm"]["userName"].value;
   let y = document.forms["myForm"]["email"].value;
-  // let z = document.txtDiv["txtDiv"].value;
+  let z = document.forms["myForm"]["msg"].value;
   // console.log(z);
-  if (x == "" || y == "") { 
-    alert("Name and email must be filled out");
+  if (x == "" || y == "" || z== "") { 
+    alert("Name, email and message must be filled out");
   }
   else {
    
-    alert(x+" we have received your message through "+y+". Thank you for reaching out to us.");
+    alert(x+" we have received your message '"+z+"' through "+y+". Thank you for reaching out to us.");
     }
     
 });

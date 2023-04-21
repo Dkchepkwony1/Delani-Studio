@@ -2,7 +2,7 @@
       
 ### Author Dickson Kiplangat Chepkwony
   **REPOSITORY LINK: https://github.com/Dkchepkwony1/Delani-Studio.git**
-  **Live Link: [Webpage](https://dkchepkwony1.github.io/Delani-Studio/) "Delani Studio"
+  **Live Link: [Webpage](https://dkchepkwony1.github.io/Delani-Studio/) "Delani Studio"**
 
 ## DESCRIPTION
   **Delani Studio. This is a sample webpage for Delani Studio**
@@ -13,7 +13,7 @@
 ## PROJECT SETUP INSTRUCTIONS
   **Step 1-Clone this repository to your deskstop using git clone <https://github.com/Dkchepkwony1/Delani-Studio.git> or download a ZIP file of the code from my repository:https://github.com/Dkchepkwony1/Delani-Studio.git.**
   **Step 2-Extra the zip to your appropriate directory and open index.html to checkout my code design. You can use this code as a startup for a new webpage or further improvement of code**
-  **Step 3- Checkout my published code on Github pages: https://dkchepkwony1.github.io/Delani Studio/ . 
+  **Step 3- Checkout my published code on Github pages: https://dkchepkwony1.github.io/Delani Studio/.**
 
 ## FUTURE FEATURES AND UPDATES
 **I will improve further the layout of this web page as my coding knowledge improves**

@@ -53,7 +53,7 @@ $(function () {
     }
    info.hide();
   $(".idimg").bind("mouseenter", function () {
-      $(this).animate({ opacity: 0.5});
+      $(this).animate({ opacity: 1});
       var p = GetScreenCordinates(this);
       info.html(this.alt);
       console.log(info);
@@ -62,7 +62,7 @@ $(function () {
       info.css({ "left": p.x, "top": p.y + this.offsetHeight - info[0].offsetHeight });
   });
   $(".idimg").bind("mouseleave", function () {
-    $(this).animate({ opacity: 6 },6000);
+    $(this).animate({ opacity: 6},6000);
       info.hide();
   });
 });
